@@ -2,7 +2,17 @@
 
 namespace messagePrinter
 {
-    public class Class1
+    public class messagePrintingService
     {
+        public string message {get; set;} = "Default";
+        public void printMessage(){
+            Console.WriteLine(this.message);
+        }
+        public messagePrintingService(){}
+        public messagePrintingService(string message){
+            this.message = message;
+
+        }
+
     }
 }
